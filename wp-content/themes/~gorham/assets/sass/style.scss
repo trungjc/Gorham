@@ -1,0 +1,50 @@
+/*
+Theme Name: gorham
+Theme URI: http://www.gingerdesign.ca/
+Author: Ginger Design
+Author URI: http://www.gingerdesign.ca/
+Description: A WordPress Starter theme based on Twitter Bootstrap and Automattic Underscore(_s). Supporting Font Awesome, multi level dropdown navigation, Schema.org markup.
+Version: 1.0.8
+
+Text Domain: gorham
+Tags: fluid-layout, translation-ready, microformats, white, light, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-menu, editor-style, featured-images, flexible-header, full-width-template, post-formats, sticky-post
+
+License: GNU General Public License V2 or Later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Import Resets 
+@import "reset";
+
+// Import Bootstrap 
+@import "bootstrap/bootstrap";
+
+// Base Styles
+@import "base/bootstrap-overrides";
+@import "base/breakpoints";
+@import "base/colors";
+@import "base/typography";
+@import "base/widgets";
+
+// Import Components
+@import "components/buttons";
+
+// Import Font Awesome 
+@import "font-awesome/font-awesome";
+
+// Region Styles
+@import "regions/body";
+@import "regions/header";
+@import "regions/mobile-navigation";
+@import "regions/content";
+@import "regions/sidebars";
+@import "regions/footer";
+
+
+// Page Styles
+@import "page/contact";
+@import "page/daycare-centre";
+@import "page/home";
+@import "page/page";
+
+// Widget Styles

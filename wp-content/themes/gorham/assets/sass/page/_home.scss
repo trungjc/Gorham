@@ -1,0 +1,130 @@
+// Homepage Styles
+
+body.home {
+	.content-row {
+		padding-left:26px; // compensate for 4px padding on day care centre grid columns
+		padding-right:26px; // compensate for 4px padding on day care centre grid columns
+	}
+}
+
+// Day Care Centre Grids
+
+.homepage-daycare-centres {
+	// @include make-row();
+	
+	.homepage-daycare-centre-1,
+	.homepage-daycare-centre-2,
+	.homepage-daycare-centre-3,
+	.homepage-daycare-centre-4,
+	.homepage-daycare-centre-5,
+	.homepage-daycare-centre-6 {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-md-column(4);
+		padding:4px;
+		margin:0;
+		
+		.homepage-daycare-centre-inner {
+			position: relative;
+			cursor:pointer;
+			
+			img.home-daycare-centre-image  {
+				width:100%;
+				height:auto;
+			}
+			
+			.daycare-centre-overlay {
+				display:block;
+				position: absolute;
+				top:0;
+				right:0;
+				bottom:0;
+				left:0;
+				height:100%;
+				width:100%;
+				text-align: center;
+				color:white;
+				background:rgba(13,47,22,0);
+				
+				.daycare-centre-overlay-content {
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					
+					h2 {
+						margin:0;
+						font-size:30px;
+						font-family: $helenas-hand;
+						text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+						line-height: 0.5;
+					}
+					
+					.daycare-centre-stars {
+						display:none;
+					  line-height: 0.5;
+					  text-align: center;
+					  
+					  span {
+						  display: inline-block;
+						  position: relative;  
+						  
+						    &:before,
+							&:after {
+							  content: "";
+							  position: absolute;
+							  height: 5px;
+							  border-bottom: 1px solid white;
+							  border-top: 1px solid white;
+							  top: 6px;
+							  width: 50px;
+							}
+							
+							&:before {
+							  right: 100%;
+							  margin-right: 10px;
+							}
+							
+							&:after {
+							  left: 100%;
+							  margin-left: 10px;
+							}
+						
+						
+						}
+						
+						
+					}
+					
+					p {
+						display:none;
+						text-transform: uppercase;
+					}
+				}
+				
+			}
+			
+			&:hover {
+				
+				.daycare-centre-overlay {
+					display:block;	
+					color:white;
+					background:rgba(13,47,22,.6);
+					
+					h2 {
+						font-size:36px;
+						text-shadow: none;
+					}
+					
+					.daycare-centre-stars {
+						display:block;
+						}
+					
+					p {
+						display:block;
+					}
+					
+				}
+			}
+		}
+	}
+}

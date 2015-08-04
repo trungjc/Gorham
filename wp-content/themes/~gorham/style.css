@@ -1,0 +1,16 @@
+/*
+Theme Name: OLD gorham
+Theme URI: http://www.gingerdesign.ca/
+Author: Ginger Design
+Author URI: http://www.gingerdesign.ca/
+Description: A WordPress Starter theme based on Twitter Bootstrap and Automattic Underscore(_s). Supporting Font Awesome, multi level dropdown navigation, Schema.org markup.
+Version: 1.0.8
+
+Text Domain: gorham
+Tags: fluid-layout, translation-ready, microformats, white, light, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-menu, editor-style, featured-images, flexible-header, full-width-template, post-formats, sticky-post
+
+License: GNU General Public License V2 or Later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "assets/css/style.css";

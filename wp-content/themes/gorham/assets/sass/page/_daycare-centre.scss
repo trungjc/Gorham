@@ -1,0 +1,220 @@
+// Day Care Centre Styles
+
+body.single-daycare_centre {
+	
+	.page-header {
+		padding:0 15px;
+		margin:0 0 44px 0;
+		border:0;
+		}
+			
+	.daycare-centre-right {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-sm-column-push(6);
+		padding-top:15px;
+		padding-bottom: 30px;
+		background:$light-yellow;
+		
+		.daycare-centre-image {
+			margin-bottom:44px;
+			
+			img {
+				width:100%;
+				height:auto;
+			}
+		}
+		
+		.daycare-centre-right-content {
+			padding:0 30px;
+			
+			h2 {
+				margin-bottom:6px;
+				font-size:28px;
+				text-transform:uppercase;
+				line-height: 1.2;
+				
+				&.daycare-about {
+					
+					span {
+						display:inline-block;
+						padding:12px 54px 4px 0;
+						background:url(../images/header-bg-star.png) right top no-repeat;
+					}
+				}
+				
+				&.daycare-whats-happening {
+					
+					span {
+						display:inline-block;
+						padding:12px 54px 4px 0;
+						background:url(../images/header-bg-shapes.png) right top no-repeat;
+					}
+				}
+			}
+			
+			p {
+				margin-bottom:35px;
+			}
+		}
+	}
+	
+	.daycare-centre-left {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-sm-column-pull(6);
+		
+		h2.daycare-centre-director {
+			margin-bottom:0;
+			color:$dark-pink;
+			font-size:26px;
+		}
+		
+		.daycare-centre-director-title {
+			margin-bottom:30px;
+			font-size:22px;
+		}
+		
+		.daycare-centre-contact-details {
+			margin-bottom:80px;
+			
+			li {
+				padding:20px 0 20px 44px;
+				border-bottom:1px dotted $mid-grey;
+				
+				&.daycare-centre-address {
+					padding-top:0;
+					background:url(../images/icon-address.png) left top no-repeat;
+				}
+				
+				&.daycare-centre-phone {
+					background:url(../images/icon-phone.png) left 50% no-repeat;
+				}
+				
+				&.daycare-centre-email {
+					background:url(../images/icon-email.png) left 50% no-repeat;
+					
+					a {
+						color:$dark-grey;
+					}
+				}
+				
+				&.last {
+					border:0;
+				}
+			}
+		}
+		
+		.daycare-centre-menus {
+			margin-bottom:80px;
+			
+			h2 {
+				margin-bottom:20px;
+				font-size:28px;
+				text-transform:uppercase;
+			}
+		
+			.daycare-centre-menus-inner {
+				@include make-row();
+				padding:0 12px;
+				
+				.daycare-centre-menu {
+					@include make-xs-column(6, 6px);
+					margin-bottom:5px;
+					font-size:20px;
+					
+					a {
+						display:block;
+						padding:30px 20px;
+						border:1px solid #E4E4E4;
+						border-radius:3px;
+						background:url(../images/icon-menus.png) 90% 28px no-repeat;
+						color:$dark-grey;
+						
+						&:hover {
+							border:1px solid #57BC54;
+							background:#57BC54 url(../images/icon-menus.png) 90% -138px no-repeat;
+							color:white;
+						}
+					}
+				}
+			}
+		}
+		
+		.daycare-centre-newsletters {
+			margin-bottom:80px;
+			
+			h2 {
+				margin-bottom:20px;
+				font-size:28px;
+				text-transform:uppercase;
+			}
+		
+			.daycare-centre-newsletters-inner {
+				@include make-row();
+				padding:0 12px;
+				
+				.daycare-centre-newsletter {
+					@include make-xs-column(6, 6px);
+					margin-bottom:5px;
+					font-size:14px;
+					
+					span {
+						font-size:20px;
+					}
+					
+					a {
+						display:block;
+						padding:30px 20px;
+						border:1px solid #E4E4E4;
+						border-radius:3px;
+						background:url(../images/icon-newsletters.png) 90% 38px no-repeat;
+						color:$dark-grey;
+						
+						&:hover {
+							border:1px solid #9C6493;
+							background:#9C6493 url(../images/icon-newsletters.png) 90% -128px no-repeat;
+							color:white;
+						}
+					}
+				}
+			}
+		}
+		
+		.daycare-centre-staff {
+			margin-bottom:80px;
+			
+			h2 {
+				margin-bottom:20px;
+				font-size:28px;
+				text-transform:uppercase;
+			}
+		
+			.daycare-centre-staff-inner {
+				@include make-row();
+				padding:0 12px;
+				
+				.daycare-centre-staff-member {
+					@include make-xs-column(6, 6px);
+					margin-bottom:5px;
+					font-size:14px;
+					
+					span {
+						font-size:20px;
+						font-weight: bold;
+					}
+					
+					.daycare-centre-staff-member-inner {
+						display:block;
+						padding:30px 20px;
+						border:1px solid #E4E4E4;
+						border-radius:3px;
+						color:$dark-grey;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	
+} // End body.single-daycare_centre

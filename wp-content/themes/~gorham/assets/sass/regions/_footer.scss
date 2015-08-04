@@ -1,0 +1,304 @@
+// Footer Styles
+
+body.home { // Homepage Footer Styles
+	
+	footer.site-footer {
+		position: relative;
+		top:0;
+		padding-top: 0;
+		z-index:3;
+		
+		.footer-container {
+			border-top:0;
+		}
+		
+		.footer-news-container {
+			@extend .container;
+			background:$blue;
+			
+			.footer-news-row {
+				padding-top:0;
+			
+				h2.block-title {
+					position: relative;
+					top: -10px;
+					margin-bottom: 30px;
+					line-height: 1;
+				}
+			}
+	
+	}
+	
+}
+}
+
+footer.site-footer {
+	z-index:1;
+	background:$red;
+	color:white;
+	
+	.footer-container {
+		@extend .container;
+		border-top:110px solid white;
+	}
+	
+	a {
+		color:white;
+	}
+	
+	.footer-news-container {
+		@extend .container;
+		background:$blue;
+		
+		.footer-news-row {
+			@include make-row();
+			
+			padding-top:34px;
+			padding-bottom: 64px;
+			
+			h2.block-title {
+				font-size:28px;
+				text-align: center;
+				text-transform:uppercase;
+				  margin-bottom: 30px;
+				  line-height: 1;
+			}
+			
+			.footer-news-inner {
+				@extend .clearfix;
+				max-width:820px;
+				margin:0 auto;
+				
+			}
+			
+			.footer-news-image {
+				float:left;
+				width:314px;
+				height:210px;
+				
+				img {
+					width:314px;
+					height:210px;
+				}
+			}
+			
+			.footer-news-content {
+				float:left;
+				width:506px;
+				height:210px;
+				padding:26px;
+				background:white;
+				color:$dark-grey;
+				
+				h2 {
+					margin:0;
+				}
+				
+				p {
+					margin-bottom:20px;
+					line-height:1.4;
+				}
+				
+				a {
+					display:inline-block;
+					background:red url(../images/home-news-bg.png) 75% 65% no-repeat;
+					padding:14px 50px 12px 20px;
+					border-radius:4px;
+						-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+						clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+				}
+			}
+			
+		}
+	}
+	
+	.footer-row {
+		@include make-row();
+		margin-left:-30px;
+		margin-right:-30px;
+	}
+	
+	.footer-statement {
+		@include make-xs-column(12);
+		text-align: center;
+		margin-bottom:35px;
+		
+		h2 {
+			margin:0;
+			border-bottom:4px solid $pink;
+			padding:35px 30px;
+			font-size:28px;
+		}
+	}
+	
+		
+	
+	.footer-address-1,
+		.footer-address-2,
+		.footer-address-3 {
+			@include make-xs-column(6);
+			@include make-sm-column(3);
+			
+			h3 {
+				font-weight: bold;
+			}
+			
+			span.footer-email-label {
+				@extend .visible-xs-block;
+			}
+			
+			span.footer-email-value {
+				@extend .hidden-xs;
+			}
+		}
+		
+		.footer-social {
+			@include make-xs-column(6);
+			@include make-sm-column(3);
+			
+			h3 {
+				font-family: $helenas-hand;
+				font-size:32px;	
+				margin:0;
+			}
+			
+		}
+	
+	.footer-copyright {
+		@include make-xs-column(12);
+		text-align: center;
+		margin-top:35px;
+		
+		p {
+			padding-top:35px;
+			border-top:1px solid $pink;
+			padding-bottom:35px;
+		}
+	}
+}
+
+
+
+
+
+
+// Breakpoint Styles
+		
+		@include breakpoint(xs) { // Mobile
+				
+			footer.site-footer {
+				
+				.footer-news-container {
+					
+					.footer-news-row {
+						
+						.footer-news-inner {
+							padding:0 30px;
+							
+						}
+						
+						.footer-news-image {
+							float:none;
+							width:100%;
+							height:auto;
+							
+							img {
+								width:100%;
+								height:auto;
+							}
+						}
+						
+						.footer-news-content {
+							float:none;
+							width:100%;
+							height:auto;
+							padding:26px;
+							background:white;
+							color:$dark-grey;
+						}
+						
+					}
+				}
+				
+				.footer-address-1,
+				.footer-address-2, {
+					margin-bottom:30px;
+				}
+				
+				.footer-address-1,
+				.footer-address-2,
+				.footer-address-3,
+				.footer-social {
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+				
+				
+
+			}
+
+		}
+				
+		@include breakpoint(sm) { // iPad Portrait
+			
+			footer.site-footer {
+				
+				.footer-news-container {
+					
+					.footer-news-row {
+						
+						.footer-news-inner {
+							padding:0 80px;
+							
+						}
+						
+						.footer-news-image {
+							float:none;
+							width:100%;
+							height:auto;
+							
+							img {
+								width:100%;
+								height:auto;
+							}
+						}
+						
+						.footer-news-content {
+							float:none;
+							width:100%;
+							height:auto;
+							padding:26px;
+							background:white;
+							color:$dark-grey;
+						}
+						
+					}
+				}
+				
+				.footer-row {
+					@include make-row();
+					margin-left:-30px;
+					margin-right:-30px;
+				}
+				.footer-address-1,
+				.footer-address-2,
+				.footer-address-3 {
+					
+					h3,
+					p {
+						font-size:14px;
+					}
+
+				}
+				
+				.footer-social {
+					
+					h3 {
+						font-size:24px;	
+					}
+					
+				}
+			}
+		  
+		  }
+		  

@@ -1,0 +1,78 @@
+// Page styles
+
+
+// Page Header
+
+.page-title {
+	@include make-row();
+	margin-bottom:30px;
+	
+	h1.entry-title {
+		@include make-xs-column(12);
+		font-size:74px;
+		font-weight:bold;
+		color:white;
+		text-transform:uppercase;
+		text-align: right;
+	}
+}
+
+
+
+// Page Content Container Styles
+
+.page-sidebar-right-content-container { // Page - Sidebar Right
+		@extend .container;
+		
+		.page-sidebar-right-content-row {
+			@include make-row();
+			
+			padding-top:80px;
+			padding-bottom:80px;
+			
+			.page-sidebar-right-content {
+					@include make-xs-column(12);
+					@include make-sm-column(8);
+			}
+		}
+		
+}
+
+.page-wide-content-container { // Page - Wide
+		@extend .container;
+		
+		.page-wide-content-row {
+			@include make-row();
+			
+			padding-top:80px;
+			padding-bottom:80px;
+		}
+		
+}
+
+
+
+
+// Breakpoint Styles
+		
+		@include breakpoint(xs) { // Mobile
+			
+			.page-header-bar {
+				padding:20px 0;
+				
+				.page-header-bar-inside {
+					
+					.page-header-bar-row {
+					
+						h1 {
+							font-size:18px;
+							
+						}
+						
+					}
+						
+				}
+			}
+					
+
+		  }
