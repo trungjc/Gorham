@@ -41,14 +41,18 @@ require get_template_directory() . '/library/underscores/jetpack.php';
  */
 function gorham_scripts() {
 
-    // load gorham styles
-    wp_enqueue_style( 'gorham-style', get_stylesheet_uri() );
 
     // load bootstrap css
     wp_enqueue_style( 'gorham-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.min.css' );
 
     // load bootstrap for WordPress css
     wp_enqueue_style( 'gorham-bootstrapwp', get_template_directory_uri() . '/assets/css/bootstrap-wp.css' );
+    
+    // load gorham styles
+    wp_enqueue_style( 'gorham-style', get_stylesheet_uri() );
+    
+    // load responsive slides css
+    wp_enqueue_style( 'gorham-responsive-slides-style', get_template_directory_uri() . '/assets/js/responsive-slides/responsiveslides.css' );
 
     // load font awesome css
     wp_enqueue_style( 'gorham-fontawesome', get_template_directory_uri() . '/assets/css/FontAwesome/font-awesome.min.css' , array(), '4.3.0', 'all' );
@@ -61,6 +65,12 @@ function gorham_scripts() {
 
     // FitVid (responsive video)
     wp_enqueue_script( 'gorham-fitvids', get_template_directory_uri() . '/assets/js/FitVids.js-master/jquery.fitvids.js', array('jquery') );
+    
+    // responsiveslider.js
+    wp_enqueue_script( 'gorham-responsive-slides', get_template_directory_uri() . '/assets/js/responsive-slides/responsiveslides.js', array('jquery') );
+    
+    // Anystretch.js
+    wp_enqueue_script( 'gorham-anystretch', get_template_directory_uri() . '/assets/js/jquery.anystretch.min.js', array('jquery') );
 
     wp_enqueue_script( 'gorham-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
 

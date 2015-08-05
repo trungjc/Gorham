@@ -3,6 +3,7 @@
 
 
 header.site-header {
+	height:300px;
 	
 	.header-container {
 		@extend .container;
@@ -225,10 +226,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu li.menu-item-has-children ul.dropdown-
 
 #header-banner {
 	position: relative;
-	height: auto;
-	  max-height:764px;
-	  overflow: hidden;
-	z-index:1;
 	
 	// Banner Slider {
 		
@@ -237,112 +234,27 @@ ul.nav li.dropdown:hover ul.dropdown-menu li.menu-item-has-children ul.dropdown-
 		li {
 		}
 	}
+}
+
+
+// Header Title Styles
+
+.header-title {
+	background:rgba(73,19,21,.5);
 	
-	.header-banner-container {
+	.header-title-container {
 		@extend .container;
-		position:absolute;
-		top:0;
-		right:0;
-		bottom:0;
-		left:0;
-		height:100%;
-		z-index:100;
 		
-		.header-banner-row {
+		.header-title-row {
 			@include make-row();
-			position:relative;
-			height:100%;
 			
-			.header-banner-content {
-				position: absolute;
-				bottom: 0;
-				  left: 0;
-				  right: 0;
-			}
-			
-			#header-banner-welcome {
-				display:inline-block;
-				padding:22px 26px;
-				background:$opaque-blue;
+			h1 {
+				@include make-xs-column(12);
 				color:white;
-				margin-bottom:40px;
-				
-				h2 {
-					margin:0 0 6px 0;
-					font-size:26px;
-					line-height:1;
-				}
-				
-				p {
-					margin:0;
-				}
-			}
-			
-			#header-banner-statement {
-				text-align:center;
-				width:100%;
-				margin:0 auto;
-				padding:50px 0;
-				background:$yellow url(../images/header-statement-bg.png) repeat;
-				color:$dark-grey;
-				
-				
-				h2 {
-					color:$dark-grey;
-					font-size:36px;
-					text-transform: uppercase;
-					margin-bottom:14px;
-					line-height: 1;
-				}
-				
-				.banner-statement-stars {
-					  line-height: 0.5;
-					  text-align: center;
-					  margin-bottom:14px;
-					  
-					  span {
-						  display: inline-block;
-						  position: relative;  
-						  
-						    &:before,
-							&:after {
-							  content: "";
-							  position: absolute;
-							  height: 5px;
-							  border-bottom: 1px solid $dark-grey;
-							  border-top: 1px solid $dark-grey;
-							  top: 6px;
-							  width: 200px;
-							}
-							
-							&:before {
-							  right: 100%;
-							  margin-right: 15px;
-							}
-							
-							&:after {
-							  left: 100%;
-							  margin-left: 15px;
-							}
-						
-						
-						}
-						
-					}
-					
-				
-				
-				p {
-					font-size:18px;
-					max-width:720px;
-					margin:0 auto;
-				}
 			}
 		}
 	}
 }
-
-
 		
 
 	
@@ -350,55 +262,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu li.menu-item-has-children ul.dropdown-
 
 // Breakpoint Styles
 		
-		@include breakpoint(xs) { // Mobile
-			
-			// Homepage Header Banner
-
-			#header-banner {
-
-				.header-banner-container {
-					position:relative;
-				
-					.header-banner-row {
-						
-						.header-banner-content {
-							position: relative;
-						
-							#header-banner-welcome {
-								display:block;
-								position: relative;
-								text-align:center;
-								margin:0;
-								width:100%;
-							}
-						}
-					}
-				}
-			}
-
-		}
+		@include breakpoint(xs) {}
 		
-		@include breakpoint(sm) { // Desktop
-			
-			header.site-header {	
-				
-				.navbar {
-						
-					// Header Navigation
-					
-					ul.navbar-nav
-	
-						li {
-							  
-									
-							a {
-								font-size:12px;
-								padding: 20px 8px 10px 8px;
-							}
-									
-						}
-							
-					}
-				}
-			}
+		@include breakpoint(sm) {}
 		

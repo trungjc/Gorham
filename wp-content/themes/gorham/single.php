@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area col-sm-12 col-md-8">
+    <div id="main-content" class="content-area">
         <main id="main" class="site-main" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
         <?php while ( have_posts() ) : the_post(); ?>

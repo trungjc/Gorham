@@ -19,7 +19,10 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php gorham_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<?php /* 
+		<footer class="entry-footer">
+			<?php // gorham_entry_footer(); ?>
+		</footer><!-- .entry-footer -->
+	*/ ?>
+	
 </article><!-- #post-## -->

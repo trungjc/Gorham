@@ -55,8 +55,8 @@
 	        		</div>
 	        		<div class="footer-social">
 	            		<h3>follow us on:</h3>
-	            		<a href="<?php the_field('twitter_link', 'option'); ?>"><img src="/wp-content/uploads/2015/07/icon-twitter.png" alt="Twitter!" /></a>
-	            		<a href="<?php the_field('facebook_link', 'option'); ?>"><img src="/wp-content/uploads/2015/07/icon-facebook.png" alt="Facebook!" /></a>
+	            		<a href="<?php the_field('twitter_link', 'option'); ?>"><img src="wp-content/uploads/2015/07/icon-twitter.png" alt="Twitter!" /></a>
+	            		<a href="<?php the_field('facebook_link', 'option'); ?>"><img src="wp-content/uploads/2015/07/icon-facebook.png" alt="Facebook!" /></a>
 	        		</div>
             	
             	<div class="footer-copyright">

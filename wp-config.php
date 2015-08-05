@@ -19,10 +19,10 @@
 define('DB_NAME', 'dgtl_gorham');
 
 /** MySQL database username */
-define('DB_USER', 'dgtl_gorham');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'm7ZuiLEyNLT2wT');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

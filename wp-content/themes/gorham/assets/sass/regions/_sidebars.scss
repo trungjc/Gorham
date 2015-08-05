@@ -1,59 +1,11 @@
-// Main content styles
-
-
+// Sidebar styles
 
 #sidebar-right {
-		@extend .hidden-xs;
-		@extend .hidden-sm;
-		@extend .col-md-4;
+		@extend .col-xs-12;
+		@extend .col-sm-4;
 		
 		.widget {
 			margin-bottom:30px;
-			
-			&.widget-padding {
-				padding:20px;
-			}
-			
-			&.widget-border {
-				border:2px solid $green;
-				border-radius:3px;
-			}
-
-			.widget-title {
-				font-size:16px;
-				margin-bottom:20px;
-				color:white;
-			}
-			
-			.widget-text {
-				
-			}
-			
-			ul {
-				padding:0;
-				margin:0;
-				
-				li {
-						margin-bottom:10px;
-						
-						&:last-child {
-								margin:0;
-						}
-				}
-			}
 		}
 		
-}
-
-
-body.page-id-16 { // Contact us page
-	
-	#sidebar-right {
-		@extend .visible-xs-block;
-		@extend .visible-sm-block;
-		@extend .visible-md-block;
-		@extend .visible-lg-block;
-		@extend .col-xs-12;
-		@extend .col-md-4;
-	}
 }

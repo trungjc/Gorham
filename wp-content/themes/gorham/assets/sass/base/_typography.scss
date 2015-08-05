@@ -1,12 +1,5 @@
 // Typography styles
 
-::selection {
-  background: transparent; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: transparent; /* Gecko Browsers */
-}
-
 /* Text meant only for screen readers */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -33,28 +26,12 @@
   z-index: 100000; /* Above WP toolbar */
 }
 
-// Add Helena's Hand font
-@font-face {
-	font-family: 'HelenasHand';
-	src: url('../fonts/helenas-hand/helenahand.eot');
-	src: local('☺'), url('../fonts/helenas-hand/helenahand.woff') format('woff'), url('../fonts/helenas-hand/helenahand.ttf') format('truetype'), url('../fonts/helenas-hand/helenahand.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
-
-// Add Open Sans
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
-
-$open-sans: 'Open Sans', arial, sans-serif;
-$helenas-hand: 'HelenasHand', arial, sans-serif;
 
 // Body Font
 
 body {
-	font-size:16px;
-	font-family: $open-sans;
-	color:$dark-grey;
+
 	} 
 
 
@@ -67,15 +44,6 @@ body {
 	border:0;
 	
 	h1.entry-title {
-		display:inline-block;
-		position: relative;
-		top:-10px;
-		background:$dark-pink url(../images/entry-title-bg.png) top right no-repeat;
-		color:white;
-		font-weight:normal;
-		font-size:26px;
-		text-transform: uppercase;
-		padding:22px 150px 22px 32px;
 	}
 	
 }
@@ -86,7 +54,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	margin:0;
 	padding:0;
-	font-family: $open-sans;
 	line-height:1.4;
 	margin-bottom:10px;
 }
@@ -99,10 +66,6 @@ h1 {
 .entry-content {
 	
 	h1 {
-		font-family: $helenas-hand;
-		font-size:42px;
-		margin:0;
-		line-height: 1;
 	}
 }
 
@@ -125,10 +88,6 @@ font-size:14px;
 p {
 	margin-bottom:10px;
 	line-height:1.6;
-}
-
-.helenas {
-	font-family:$helenas-hand;
 }
 
 // General styles
@@ -165,14 +124,8 @@ a {
 	ul {
 	
 	li {
-		margin:0;
-		padding:18px 40px;
-		background: url('../images/li-bg.png'), url('../images/colored-strip-thin.png');
-		background-position: left 50%, left bottom;
-		background-repeat: no-repeat, repeat-x;
 		
 		&:last-child {
-			background: url('../images/li-bg.png') left 50% no-repeat;
 			}
 		}
 			

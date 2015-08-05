@@ -1,0 +1,45 @@
+// Apartment Styles
+
+
+#apartment-content-top {
+	@include make-row();
+	margin-bottom:50px;
+	
+	#apartment-content-top-left {
+	@include make-xs-column(12);
+	@include make-sm-column(7);
+	
+	img {
+			width:100%;
+			height:auto;
+		}
+	}
+	
+	#apartment-content-top-right {
+		@include make-xs-column(12);
+		@include make-sm-column(5);
+		
+	}
+}
+
+
+#apartment-content-description {
+	margin-bottom:50px;
+}
+
+
+#apartment-content-details {
+	@include make-row();
+	margin-bottom:50px;
+	
+	#apartment-content-details-left {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+	}
+	
+	#apartment-content-details-right {
+		@include make-xs-column(12);
+		@include make-sm-column(5);
+		
+	}
+}

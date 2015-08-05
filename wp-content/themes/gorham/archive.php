@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<?php // add the class "panel" below here to wrap the content-padder in Bootstrap style ;) ?>
-	<div id="primary" class="content-area col-sm-12 col-md-8" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+	<div id="main-content" class="content-area" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

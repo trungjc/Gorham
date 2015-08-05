@@ -5,76 +5,37 @@
 body.home {
 	
 	#content {
-		padding-top:0;
-		background:#F2F2F2 url(../images/body-bg.png) repeat;
-	
-		.content-container {
-			background:white url(../images/colored-strip.png) repeat-x;
-			padding-top:34px; // 4px extra for the colored strip background
-			padding-bottom:34px;
-			border-bottom:45px solid $blue;
-		}
+	padding:0;
 	}
 	
 }
 
 
 
-
 // Site wide
+
 #content {
+	background:white;
+	padding:80px 0;
 	
-	#content-banner {
-		height:250px;
-	}
-		
-		
-		#content-inner {
-			background:#F2F2F2 url(../images/body-bg.png) repeat;
-		}
-		
 		.content-container {
 			@extend .container;
 			position: relative;
-			padding:0 45px;
-			background:white;
-			z-index:2;
 			
 			.content-row {
 				@include make-row();
 			}
 			
-			#content-main {
+			#main-content {
 				@include make-xs-column(12);
 					
 				}
 			
-			&.page-wide {
+			&.has-sidebar-right {
 				
-				#content-main {
+				#main-content {
 					@include make-xs-column(12);
-					
-				}
-				
-			}
-			
-			
-			&.sidebar-left {
-				
-				#content-main {
-					@include make-xs-column(12);
-					@include make-md-column(8);
-						
-				}
-				
-			}
-			
-			
-			&.sidebar-right {
-				
-				#content-main {
-					@include make-xs-column(12);
-					@include make-md-column(8);
+					@include make-sm-column(8);
 				}
 				
 			}
@@ -83,18 +44,5 @@ body.home {
 		
 }
 		
-
-// If Sidebar left template push .main-content right
-
-.page-template-template-sidebar-left {
-		
-		.main-content {
-			@include make-xs-column(12);
-			@include make-md-column(8);
-			@extend .col-md-push-4;
-			}
-}
-
-
 	
 } // End #content

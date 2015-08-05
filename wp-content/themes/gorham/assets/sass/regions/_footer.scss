@@ -13,72 +13,104 @@ footer.site-footer {
 	}
 	
 	.footer-top {
-		
+		padding:30px 0;
+		background:rgba(0,0,0,0.8);
+		border-bottom: 8px solid #660E15;
+        
 		.footer-top-container {
 			@extend .container;
 			
 			.footer-top-row {
 				@include make-row();
+				
+				.footer-top-block {
+                    @include make-xs-column(12);
+					@include make-sm-column(6);
+					@include make-md-column(3);
+                    
+                    .footer-top-block-inner {
+                        text-align: center; 
+                        border: 1px solid white;
+                        padding: 12px 0; 
+                        min-height: 112px;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-weight: bold;
+                        
+                        .footer-block-img {
+                            background-position: center ;
+                            background-repeat: no-repeat;
+                            min-height: 70px;
+                        }
+                     }
+				}
 			}
 		}
 	}
 	
 	.footer-bottom {
-		border-top:10px solid #660E15;
 		background:#491315;
-		
+        padding: 40px 0 0 0;  
+       
+        
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom:5px;
+        }
+        
 		.footer-statement {
-			background:#3F0F13;
-			
-			.footer-statement-container {
-				@extend .container;
-				
-				.footer-statement-row {
-					@include make-row();
-				}
-			}	
-		}
-		
+            padding: 20px 0;
+            background:#3F0F13;
+            margin: 0 0 30px 0;
+            h2 {
+                @include make-xs-column(12);
+                margin: 0;
+                font-size: 26px;
+            }
+        }
+            
 		.footer-bottom-container {
 			@extend .container;
-			
+			position: relative;
+            .footer-logo {
+                background:  url("../images/gorham-real-estate.png") no-repeat;
+                bottom: 0;
+                display: block;
+                height: 238px;
+                position: absolute;
+                right: 0;
+                width: 264px;            
+            }
+            
 			.footer-bottom-row {
 				@include make-row();
+				
+				
+					
+				
+				.footer-address {
+					@include make-xs-column(12);
+					@include make-sm-column(6);
+					@include make-md-column(3);
+				}
+				
+				.footer-hours {
+					@include make-xs-column(12);
+					@include make-sm-column(6);
+					@include make-md-column(3);
+				}
+			
+				
+				.footer-copyright {
+					@include make-xs-column(12);
+				}	
 			}
 		}
 	}
 
 	
-	.footer-statement {
-		@include make-xs-column(12);
-		
-		h2 {
-		}
-	}
 	
-	.footer-top-block {
-		@include make-xs-column(12);
-		@include make-sm-column(6);
-		@include make-md-column(3);
-	}
-		
-	
-	.footer-address {
-		@include make-xs-column(12);
-		@include make-sm-column(6);
-		@include make-md-column(3);
-	}
-	
-	.footer-hours {
-		@include make-xs-column(12);
-		@include make-sm-column(6);
-		@include make-md-column(3);
-	}
-
-	
-	.footer-copyright {
-		@include make-xs-column(12);
-	}
 }
 
 
@@ -88,7 +120,23 @@ footer.site-footer {
 
 // Breakpoint Styles
 		
-		@include breakpoint(xs) {}
+		@include breakpoint(xs) {
+            .footer-top-block {
+                margin:10px 0;
+            }
+             footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
+                width: 140px;
+                height: 120px;
+                background-size: 100%;
+             }
+        }
 				
-		@include breakpoint(sm) {}
+		@include breakpoint(sm) {
+            .footer-top-block {
+                margin:10px 0;
+            }
+            footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
+                display: none;
+            }
+        }
 		  

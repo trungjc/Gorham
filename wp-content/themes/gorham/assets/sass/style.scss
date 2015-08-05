@@ -42,9 +42,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 // Page Styles
-@import "page/contact";
-@import "page/daycare-centre";
 @import "page/home";
 @import "page/page";
+
+// Apartment Styles
+@import "apartment/apartment";
+@import "apartment/apartment-listing";
 
 // Widget Styles
