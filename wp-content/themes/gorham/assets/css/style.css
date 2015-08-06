@@ -8419,8 +8419,7 @@ footer.site-footer {
     color: white; }
   footer.site-footer .footer-top {
     padding: 30px 0;
-    background: rgba(0, 0, 0, 0.8);
-    border-bottom: 8px solid #660E15; }
+    background: rgba(0, 0, 0, 0.8); }
     footer.site-footer .footer-top .footer-top-container .footer-top-row {
       margin-left: -15px;
       margin-right: -15px; }
@@ -8465,16 +8464,13 @@ footer.site-footer {
             background-repeat: no-repeat;
             min-height: 70px; }
   footer.site-footer .footer-bottom {
-    background: #491315;
-    padding: 40px 0 0 0; }
+    background: #491315; }
     footer.site-footer .footer-bottom h3 {
       font-size: 16px;
       font-weight: bold;
       margin-bottom: 5px; }
     footer.site-footer .footer-bottom .footer-statement {
-      padding: 20px 0;
-      background: #3F0F13;
-      margin: 0 0 30px 0; }
+      padding: 40px 0 0 0; }
       footer.site-footer .footer-bottom .footer-statement h2 {
         position: relative;
         float: left;
@@ -8485,15 +8481,9 @@ footer.site-footer {
         margin: 0;
         font-size: 26px; }
     footer.site-footer .footer-bottom .footer-bottom-container {
-      position: relative; }
-      footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
-        background: url("../images/gorham-real-estate.png") no-repeat;
-        bottom: 0;
-        display: block;
-        height: 238px;
-        position: absolute;
-        right: 0;
-        width: 264px; }
+      background: url("../images/letter-g.png") no-repeat right top; }
+      footer.site-footer .footer-bottom .footer-bottom-container .footer-contact-infor {
+        padding: 40px 0 20px; }
       footer.site-footer .footer-bottom .footer-bottom-container .footer-bottom-row {
         margin-left: -15px;
         margin-right: -15px; }
@@ -8560,16 +8550,17 @@ footer.site-footer {
   .footer-top-block {
     margin: 10px 0; }
 
-  footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
-    width: 140px;
-    height: 120px;
-    background-size: 100%; } }
+  footer.site-footer .footer-bottom .footer-bottom-container {
+    background: none; }
+
+  footer.site-footer .footer-bottom .footer-statement {
+    display: none; } }
 @media (min-width: 767px) and (max-width: 992px) {
   .footer-top-block {
     margin: 10px 0; }
 
-  footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
-    display: none; } }
+  footer.site-footer .footer-bottom .footer-bottom-container {
+    background: none; } }
 .page-title {
   margin-left: -15px;
   margin-right: -15px; }

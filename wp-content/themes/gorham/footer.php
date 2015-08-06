@@ -10,6 +10,7 @@
 
     <footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 	            
+                        
 	            <div class="footer-top">
 		            <div class="footer-top-container">
 			            <div class="footer-top-row">
@@ -49,17 +50,12 @@
 		            </div>
             	</div><!-- .footer-top -->
             	
-	            <div class="footer-bottom">
-                    <div class="footer-statement">
-                        <div class="footer-bottom-container">
-                            <div class="footer-bottom-row">
-                                <h2><?php the_field('footer_statement', 'option'); ?></h2>
-                            </div>
-                        </div>								
-				    </div><!-- .footer-statement -->
+	            <div class="footer-bottom">                    
 	            	<div class="footer-bottom-container">
-                        <span class="footer-logo"></span>
-			            <div class="footer-bottom-row">         	
+						<div class="footer-statement footer-bottom-row">
+							<h2><?php the_field('footer_statement', 'option'); ?></h2>                          							
+						</div><!-- .footer-statement -->
+			            <div class="footer-contact-infor footer-bottom-row">         	
 			        		<div class="footer-address">
                                 <h3>CONTACT</h3>
 			            		<p>P - <?php the_field('footer_address_phone', 'option'); ?><br />

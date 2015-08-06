@@ -15,7 +15,6 @@ footer.site-footer {
 	.footer-top {
 		padding:30px 0;
 		background:rgba(0,0,0,0.8);
-		border-bottom: 8px solid #660E15;
         
 		.footer-top-container {
 			@extend .container;
@@ -50,8 +49,7 @@ footer.site-footer {
 	
 	.footer-bottom {
 		background:#491315;
-        padding: 40px 0 0 0;  
-       
+		
         
         h3 {
             font-size: 16px;
@@ -60,9 +58,7 @@ footer.site-footer {
         }
         
 		.footer-statement {
-            padding: 20px 0;
-            background:#3F0F13;
-            margin: 0 0 30px 0;
+            padding: 40px 0 0 0;
             h2 {
                 @include make-xs-column(12);
                 margin: 0;
@@ -71,24 +67,14 @@ footer.site-footer {
         }
             
 		.footer-bottom-container {
-			@extend .container;
-			position: relative;
-            .footer-logo {
-                background:  url("../images/gorham-real-estate.png") no-repeat;
-                bottom: 0;
-                display: block;
-                height: 238px;
-                position: absolute;
-                right: 0;
-                width: 264px;            
-            }
-            
+			@extend .container;			
+            background:  url("../images/letter-g.png") no-repeat right top;
+			
+			.footer-contact-infor  {
+				padding: 40px 0 20px;
+			}
 			.footer-bottom-row {
 				@include make-row();
-				
-				
-					
-				
 				.footer-address {
 					@include make-xs-column(12);
 					@include make-sm-column(6);
@@ -124,19 +110,20 @@ footer.site-footer {
             .footer-top-block {
                 margin:10px 0;
             }
-             footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
-                width: 140px;
-                height: 120px;
-                background-size: 100%;
-             }
+            footer.site-footer .footer-bottom .footer-bottom-container {
+				background: none;
+			}
+			footer.site-footer .footer-bottom .footer-statement {
+               display: none;
+            } 
         }
 				
 		@include breakpoint(sm) {
             .footer-top-block {
                 margin:10px 0;
             }
-            footer.site-footer .footer-bottom .footer-bottom-container .footer-logo {
-                display: none;
-            }
+			footer.site-footer .footer-bottom .footer-bottom-container {
+				background: none;
+			}
         }
 		  
